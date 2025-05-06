@@ -9,9 +9,26 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>View Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        
+    <h1>Remove student</h1>
+        <p>
+            Please enter a student number of a student to remove.
+        </p>
+        <form action="RemoveStudentdServlet.do" method="POST">
+            <table>
+                <tr>
+                    <td>Student number: </td>
+                    <td><input type="text" name="studNum" required=""/></td>
+                </tr>
+                
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="REMOVE STUDENT"/></td>
+                </tr>
+            </table>
+        </form>
     </body>
 </html>
