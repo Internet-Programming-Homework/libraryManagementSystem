@@ -1,7 +1,12 @@
 /WebApplication1/nbproject/private/
 /LibraryManagementWebApp/nbproject/private/
+<<<<<<< HEAD
+/LibraryManagementWebApp/build/
+/LibraryManagementWebApp/dist/
+=======
 /LibraryManagementSystemEJBBAckEnd/nbproject/private/
 /LibraryManagementSystemEJBBAckEnd/build/
 /LibraryManagementSystemEJBBAckEnd/dist/
 /LibraryManagementWebApp/dist/
 /LibraryManagementWebApp/build/
+>>>>>>> 45c597fe6af94fd171b8f1065b07e26d3bd2d21a
