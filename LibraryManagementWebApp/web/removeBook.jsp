@@ -3,11 +3,11 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Update Book Page</title>
+        <title>Remove Book Page</title>
         <style>
             body {
                 font-family: Arial, sans-serif;
-                background-color: #f4f4f4;
+                background-color: #f0f0f0;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -20,18 +20,13 @@
                 padding: 30px;
                 border-radius: 10px;
                 box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-                width: 400px;
+                width: 320px;
             }
 
             h1 {
                 text-align: center;
                 color: #333333;
-            }
-
-            p {
-                text-align: center;
                 margin-bottom: 20px;
-                color: #666666;
             }
 
             table {
@@ -53,7 +48,7 @@
             input[type="submit"] {
                 width: 100%;
                 padding: 10px;
-                background-color: #1976d2;
+                background-color: #e53935;
                 color: white;
                 font-weight: bold;
                 border: none;
@@ -63,35 +58,24 @@
             }
 
             input[type="submit"]:hover {
-                background-color: #1565c0;
+                background-color: #d32f2f;
             }
         </style>
     </head>
     <body>
-        <form action="updateBookServlet.do" method="POST">
-            <h1>Update Book</h1>
-            <p>Please enter the details of the book.</p>
+        <form action="removeBookServlet.do" method="POST">
+            <h1>Remove Book</h1>
             <table>
                 <tr>
-                    <td>Title:</td>
-                    <td><input type="text" name="title" required=""/></td>
-                </tr>
-                <tr>
                     <td>ISBN:</td>
-                    <td><input type="text" name="isbn" required=""/></td>
-                </tr>
-                <tr>
-                    <td>Author:</td>
-                    <td><input type="text" name="author" required=""/></td>
-                </tr>
-                <tr>
-                    <td>Available copies:</td>
-                    <td><input type="text" name="availCopies" required=""/></td>
+                    <td>
+                        <input type="text" name="isbn" required=""/>
+                    </td>
                 </tr>
                 <tr>
                     <td></td>
                     <td>
-                        <input type="submit" value="UPDATE THE BOOK"/>
+                        <input type="submit" value="REMOVE THE BOOK"/>
                     </td>
                 </tr>
             </table>
